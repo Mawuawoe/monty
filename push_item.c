@@ -22,7 +22,7 @@ return (1);
 }
 /**
  * push_item - pushes an element onto the stack
- * @stack: pointer to top of the stack
+ * @queues: pointer to top of the stack
  * @line_number: The line number of the opcode
  */
 void push_item(stack_t **queues, unsigned int line_number)
