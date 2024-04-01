@@ -1,5 +1,4 @@
-#include "main.h"
-
+#include "monty.h"
 /**
  * pall_item - To print all values on the stack
  * @queues: pointer to the top of the stack

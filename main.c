@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * main - The Main function for monty program.
  * @argc: arguments count

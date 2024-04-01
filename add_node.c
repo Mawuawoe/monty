@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * add_node - To adds a new node at the beginning of a stack_t list

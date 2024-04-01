@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * process_file - reads and executes opcodes from a file
  * @queues:The pointer to the top of the stack
