@@ -28,16 +28,16 @@ return (1);
 void push_item(stack_t **queues, unsigned int line_number)
 {
 int data;
-if(glob.arg == NULL || !is_integer(glob.arg))
+if (glob.arg == NULL || !is_integer(glob.arg))
 {
-fprintf(stderr,"L%d: usage: push integer\n", line_number);
+fprintf(stderr, "L%d: usage: push integer\n", line_number);
 free_list(*queues);
 fclose(glob.fpter);
 free(glob.line);
 exit(EXIT_FAILURE);
 }
 data = atoi(glob.arg);
-if(add_node(queues, data) == NULL)
+if (add_node(queues, data) == NULL)
 {
 fprintf(stderr, "Error: malloc failed\n");
 free_list(*queues);

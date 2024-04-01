@@ -1,4 +1,7 @@
 #include "monty.h"
+/*global struct declared*/
+glob_s glob;
+
 /**
  * main - The Main function for monty program.
  * @argc: arguments count
@@ -6,9 +9,6 @@
  *
  * Return: 0 on success, non-zero on failure
  */
-
-/*global struct declared*/
-glob_s glob;
 
 int main(int argc, char *argv[])
 {
@@ -24,7 +24,7 @@ exit(EXIT_FAILURE);
 glob.fpter = fopen(argv[1], "r");
 if (glob.fpter == NULL)
 {
-fprintf(stderr, "Error: Unable to open file %s\n", argv[1]);
+fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 process_file(&queues);
