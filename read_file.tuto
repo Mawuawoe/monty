@@ -1,0 +1,33 @@
+#define _POSIX_C_SOURCE 200809L
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <sys/types.h>
+
+int main(int argc, char *argv[]) {
+    argc = 2;
+    FILE *file;
+    size_t n = 0;
+    ssize_t read;
+    char *line = NULL;
+    char *opcode;
+    char *arg;
+    file = fopen("./txt", "r");
+    if (file == NULL) {
+        perror("Error opening file");
+        return 1;
+    }
+    while ((read = getline(&line, &n, file)) != -1) {
+        printf("%s", line);
+        opcode = strtok(line, " \t\n");
+        printf("###%s\n", opcode);
+        arg = strtok(NULL, " \t\n");
+        printf("$$$%s\n", arg);
+    }
+    printf("\n");
+    fclose(file);
+    if (line != NULL) {
+        free(line);
+    }
+    return 0;
+}
