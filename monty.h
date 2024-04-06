@@ -68,5 +68,9 @@ void swap_top(stack_t **queues, unsigned int line_number);
 void add(stack_t **queues, unsigned int line_number);
 void do_nothing(stack_t **queues, unsigned int line_number);
 void sub(stack_t **queues, unsigned int line_number);
+void div(stack_t **queues, unsigned int line_number);
+
+
+
 
 #endif
