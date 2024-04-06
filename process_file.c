@@ -40,6 +40,7 @@ instruction_t instruction[] = {
 {"nop", do_nothing},
 {"sub", sub},
 {"div", _div},
+{"mul", _mul},
 {NULL, NULL}
 };
 
