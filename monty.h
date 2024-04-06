@@ -62,7 +62,7 @@ void pall_item(stack_t **queues, unsigned int line_number);
 void exec_opcode(char *opcode, stack_t **queues, unsigned int line_number);
 int is_integer(char *str);
 stack_t *add_node(stack_t **queues, const int data);
-
+void peek(stack_t **queues, unsigned int line_number);
 
 
 

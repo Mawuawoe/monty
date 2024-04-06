@@ -33,6 +33,7 @@ void exec_opcode(char *opcode, stack_t **queues, unsigned int line_number)
 instruction_t instruction[] = {
 {"push", push_item},
 {"pall", pall_item},
+{"pint", peek},
 {NULL, NULL}
 };
 
