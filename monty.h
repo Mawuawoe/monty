@@ -64,6 +64,6 @@ int is_integer(char *str);
 stack_t *add_node(stack_t **queues, const int data);
 void peek(stack_t **queues, unsigned int line_number);
 void pop(stack_t **queues, unsigned int line_number);
-
+void swap_top(stack_t **queues, unsigned int line_number);
 
 #endif
