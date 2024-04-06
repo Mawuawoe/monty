@@ -18,7 +18,7 @@ void print_char(stack_t **queues, unsigned int line_number)
 	value = (*queues)->h;
 	if (value < 0 || value > 127)
 	{
-		fprintf(stderr, "L%d: can't print, out of range\n", line_number);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
