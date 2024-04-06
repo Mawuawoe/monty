@@ -36,6 +36,7 @@ instruction_t instruction[] = {
 {"pint", peek},
 {"pop", pop},
 {"swap", swap_top},
+{"add", add},
 {NULL, NULL}
 };
 
