@@ -11,7 +11,7 @@ void print_char(stack_t **queues, unsigned int line_number)
 
 	if (*queues == NULL)
 	{
-		fprintf(stderr, "L%d: can't print, stack empty\n", line_number);
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
