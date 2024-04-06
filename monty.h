@@ -70,7 +70,7 @@ void do_nothing(stack_t **queues, unsigned int line_number);
 void sub(stack_t **queues, unsigned int line_number);
 void _div(stack_t **queues, unsigned int line_number);
 void _mul(stack_t **queues, unsigned int line_number);
-
+void _mod(stack_t **queues, unsigned int line_number);
 
 
 #endif
