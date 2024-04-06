@@ -25,5 +25,5 @@ void _mod(stack_t **queues, unsigned int line_number)
 	}
 
 	(*queues)->next->h = j % i;
-	pop_opcode(queues, line_number);
+	pop(queues, line_number);
 }
