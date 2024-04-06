@@ -11,7 +11,7 @@ void swap_top(stack_t **queues, unsigned int line_number)
 
 	if (*queues == NULL || (*queues)->next == NULL)
 	{
-		fprintf(stderr, "L%d: Unable to  swap, too short\n", line_number);
+		fprintf(stderr, "L%d: can't swap, too short\n", line_number);
 		free(glob.line);
 		free_list(*queues);
 		exit(EXIT_FAILURE);
